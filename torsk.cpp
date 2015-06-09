@@ -81,7 +81,7 @@ void alt()
     if (v == candy) {
         printf("==> Du köper 5 kilo godis.\n");
         g_peng -= 350;
-        return;
+        g_godis = 5.0f;
     } else if (v == sm) {
         printf("==> Du tar en taxi till Södermalm tillsammans med övriga ölsugna. Du har tur och slipper betala.\n");
         g_pl = 0;
