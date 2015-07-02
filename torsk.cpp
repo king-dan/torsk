@@ -77,11 +77,17 @@ void alt()
     }
     
     printf("\n");
+    if (g_godis > 0) 
+    {
+        g_godis--;
+        printf("==> Du äter lite av godiset.");
+    }
+    printf("\n");
 
     if (v == candy) {
         printf("==> Du köper 5 kilo godis.\n");
         g_peng -= 350;
-        g_godis = 5.0f;
+        g_godis += 5;
     } else if (v == sm) {
         printf("==> Du tar en taxi till Södermalm tillsammans med övriga ölsugna. Du har tur och slipper betala.\n");
         g_pl = 0;
